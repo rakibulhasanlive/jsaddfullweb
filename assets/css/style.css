@@ -1,0 +1,1148 @@
+@font-face {
+	font-family: OpenSans-Light;
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+	font-family: Raleway-Light;
+	src: url(../fonts/Raleway-Light.ttf);
+}
+
+@font-face {
+	font-family: Raleway-ExtraBold;
+	src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+	font-family:Raleway-Regular ;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+	/*FONTS ADD END*/
+
+
+/*PRELOADER ADD*/
+/* Preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background-image:url(../img/PL.gif); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+/*##############################################
+
+                GLOBAL START
+
+##############################################*/
+
+*{
+ 	margin: 0px;
+ 	padding: 0px;
+ 	font-family:Raleway-Regular; 
+ 	box-sizing: border-box;
+ }
+
+body p{
+ 	font-family: Raleway-Light;
+ }
+
+ .container {
+ 	width: 80%;
+ 	margin: auto;
+ }
+ ::selection{
+ 	background-color: #FF417B;
+ 	color: #fff;
+ }
+
+ .headline {
+ 	max-width: 500px;
+ 	margin: auto;
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+ 	text-align: center;
+ 	padding-top: 100px;
+ }
+.headline h2{
+ 	font-size: 32px;
+ 	line-height: 38px;
+ 	color: #111111;
+ 	padding-bottom: 40px;
+
+ }
+
+.headline h3{
+	font-size: 16px;
+	line-height: 19px;
+	color: #222222;
+	padding-bottom: 9px;
+}
+/*##############################################
+
+                ===GLOBAL END===
+
+##############################################*/
+
+/*##############################################
+
+				===HEADER START===
+
+##############################################*/
+
+.header {
+ 	/*background-color: #000;*/
+ 	overflow: hidden;
+ 	z-index: 99999;
+ 	padding: 15px 0px;
+ 	position: fixed;
+ 	width: 100%;
+ 	top: 0;
+ 	font-family: Raleway-Regular;
+ }
+
+ .header .row {
+ 	display: flex;
+ 	align-items: center;
+ 	overflow: hidden;
+
+ }
+
+.header .col1 {
+ 	width: 18%;
+ 	float: left;
+ }
+
+.header .header-logo a{
+	font-size: 23px;
+	line-height: 42px;
+	color: #f4f2f2;
+	text-decoration: none;
+	font-family: Raleway-ExtraBold;
+
+}
+
+
+
+.header .col2 {
+ 	width: 80%;
+ 	float: right;
+ }
+
+ .header .menu ul {
+ 	text-align: right;
+ }
+
+.header .menu ul li {
+ 	display: inline-block;
+ 	padding: 10px ;
+ 	position: relative;
+ }
+
+ 
+.header .menu ul li a {
+ 	text-decoration: none;
+ 	color: #fff;
+ 	transition: .4s;
+ 	overflow: hidden;
+
+ }
+
+ .header .menu ul li a:after{
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	height: 2px;
+	width: 100%;
+	right: 0;
+	left: 8px; 
+	bottom: 0;
+	width: 0;
+	transition: 0.4s;
+	
+}
+
+.header .menu ul li:hover a:after{ 
+	width: 80%;
+
+}
+
+.header .menu ul li a:hover{
+	color: #777; 
+	/*padding: 5px;
+	border-radius: 4px;*/
+}
+
+
+.header .mobile-menu, .togle-menu {
+	display: none;
+}
+
+/*##############################################
+
+				===HEADER END===
+
+##############################################*/
+
+/*#############################################
+
+		===BANNER START===
+
+#############################################*/
+
+.banner {
+ 	background-image: url();
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ 	position: relative;
+ 	padding-top: 200px;
+ 	padding-bottom: 40px;
+  	overflow: hidden;
+ }
+
+.banner:before{
+ 	content: "";
+ 	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	background-color: rgba(0, 0, 0, 0.55);
+ }
+
+
+.banner .col {
+ 	width: 60%;
+ }
+
+
+ .banner .col h2 {
+ 	font-size: 88px;
+ 	line-height: 106px;
+ 	font-weight: 400px;
+ 	padding-top: 10px;
+ 	padding-bottom: 20px;
+ 	color: #fff;
+ 	position: relative;
+ 	text-align: left;
+ 	font-family: Raleway-ExtraBold;
+ 	
+ }
+
+.banner .col p { 
+ 	font-size: 24px;
+ 	line-height: 39px;
+ 	padding-bottom: 30px;
+ 	color: #fff;
+ 	position: relative;
+ 	text-align: center;
+ 	overflow: hidden;
+ 	text-align: left;
+ 	margin-bottom: 230px;
+ 	/*font-family: Raleway-ExtraBold;*/
+ }
+.banner .col span{
+	font-family: Raleway-ExtraBold;
+}
+
+.banner .arrow a{
+	padding-top: 200px;
+
+}
+
+.arrow {
+  	position: absolute;
+ 	bottom: 10vh;
+ 	width: 100vw;
+ 	z-index: 20;
+  	padding-left: 75px; }
+
+
+ .arrow a {
+    color: #fff;
+    text-decoration: none;
+
+  }
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+
+/*#############################################
+
+		===BANNER END===
+
+#############################################*/
+
+
+/*#################################################
+
+		=== ABOUT START ===
+
+#################################################*/
+
+.about {
+ padding: 120px 0px;
+ color: #212529;
+ }
+
+.about .about-img{
+	position: relative;
+}
+
+ .about .about-img img {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    -webkit-box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14); 
+}
+
+
+.about .about-img:before {
+    content: "";
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    z-index: 0; }
+
+
+
+.about .row {display: flex;
+ 	align-items: center; }
+
+
+ .about .info h2 {
+ 	font-size:32px;
+ 	color: #000000; 
+ 	line-height:38px;
+ 	padding-bottom: 15px;
+
+ }
+
+.about .info h3 {
+      font-size: 19px;
+      line-height: 31px;
+      color: #444444;
+      margin-bottom: 20px;
+      font-family:  Raleway-Light;
+ }
+
+ .about .info h3 span {
+       font-size: 19px;
+       line-height: 39px;
+       color: #e65f78;
+      /*/*/
+ }
+
+ .about .info p {
+       color: #484848;
+       margin-bottom: 40px;
+       font-size: 17px;
+       line-height: 27px;
+
+ }
+
+
+  .about .info p span{
+  	font-family: Raleway-ExtraBold;
+  }
+
+ .about .col1 { 
+       width: 45%;
+       float: left; 
+       margin-right: 4%;
+
+   }
+
+.about .col2 {
+ 	width: 48%;
+ 	float: right;
+ 	margin-bottom: 36px;
+  }
+
+
+
+.about .social-icon ul {
+
+ 
+   }
+
+
+.about .social-icon ul li {
+ list-style: none;
+ display: inline-block;
+ margin-right: 9px;
+
+   }
+
+.about .social-icon ul li i {
+	 font-size: 16px;
+	 width: 35px;
+	 height: 35px;
+	 border: 1px solid #d4d4d4;
+	 border-radius: 50%;
+	 cursor: pointer;
+	 text-align: center;
+	 padding-top: 8px;
+	 background-color: #000;
+	 color: #fff;
+	 transition: .4s;
+}
+
+
+.about .social-icon ul li i:hover{ 
+	color:#000;
+	background-color: #fff;
+	border-color: #000; 
+}
+
+.about .about-box {
+	/*padding-top: 80px;*/
+	margin-top: 63px;
+
+}
+
+.about .about-box a{
+	border: 1px solid #000;
+	text-align: center;
+	text-decoration: none;
+	padding: 16px 40px;
+	font-size: 14px;
+	/*! line-height: 27px; */
+	color: #ffffff;
+	/*! position: relative; */
+	background-color: #000000;
+	transition: .5s;
+}
+
+.about .about-box a:hover{
+	background-color: transparent;
+	color: #000;
+	
+}
+
+/*#################################################
+
+		=== ABOUT END ===
+
+#################################################*/
+/*#################################################
+
+   		=== SERVICES START ===
+
+#################################################*/
+
+.services{
+	background-color: #F2F2F2;
+	overflow: hidden;
+	padding-bottom: 50PX;
+}
+
+.services .col1{
+	width:33%;
+	margin: auto;
+	float: left;
+	overflow: hidden;
+
+}
+
+.services .service-box{
+	overflow: hidden;
+	padding: 30px 15px ;
+	margin: 10px;
+}
+
+.services .services-icon{
+	text-align: center;
+}
+
+.services .services-icon i{
+	font-size: 20px;
+	color:#000;
+	overflow: hidden;
+	border: 2px solid #dddddd;
+	/*padding: 20px 20px;*/
+	padding-top: 25px;
+	border-radius: 50%;
+	background-color: #F2F2F2;
+	height: 80px;
+	width: 80px;
+}
+
+.services .service-content h3 {
+	font-size: 18px;
+	line-height: 22px;
+	color: #222222;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.services .service-content p{
+	padding-top: 10px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #484848;
+	text-align: center;
+}
+
+
+
+
+/*#################################################
+
+   		=== SERVICES END ===
+
+#################################################*/
+
+/*###################################################
+
+		=== SKILL START ===
+
+###################################################*/
+
+.skill{
+	background-image: url();
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ 	position: relative;
+ 	padding-top: 70px;
+ 	padding-bottom: 40px;
+  	overflow: hidden;
+}
+
+.skill:before{
+ 	content: "";
+ 	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	background-color: rgba(0, 0, 0, 0.55);
+ }
+.skill .row{
+	overflow: hidden;
+}
+
+.skill .col1 {
+	float: left;
+	width: 25%;
+	text-align: center;
+	position: relative;
+	padding-top: 50px;
+	
+}
+
+.skill .col1 i{
+	color: #fff;
+	font-size: 30px;
+	line-height: 30px;
+	padding-bottom: 10px;
+	
+
+}
+
+.skill .col1 hr{
+	width: 50px;
+	margin: auto;
+	padding: 1px 0px;
+	color: #fff;
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+
+.skill .col1 h2{
+	font-size: 32px;
+	line-height: 38px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #fff;
+	font-family: Raleway-ExtraBold;
+	
+}
+
+
+
+.skill .col1 p{
+	font-size: 16px;
+	line-height: 27px;
+	color: #ffffff;
+	padding-bottom: 70px;
+	font-family: Raleway-ExtraBold;
+	
+}
+
+
+
+/*###################################################
+
+		=== SKILL END ===
+
+###################################################*/
+
+/*##################################################
+
+		=== PORTFOLIO START ===
+
+##################################################*/
+.portfolio {
+	margin-bottom: 40px;
+}
+
+
+.portfolio .portfolio-menu { 
+      padding-top: 10px;
+      padding-bottom: 35px;
+}
+
+.portfolio .portfolio-menu ul {
+      text-align: center;}
+
+.portfolio .portfolio-menu ul li { 
+      display: inline-block;
+      	
+}
+
+.portfolio .portfolio-menu ul li a {
+      font-size: 14px;
+      line-height: 21px;
+      text-decoration: none;
+      color: #777777;
+      transition: 0.4s;
+}
+
+.portfolio .portfolio-menu ul li a:hover{
+      color: #000000;
+      	
+}
+
+.portfolio .portfolio-menu ul li .active {
+     color: #000000;
+ }
+
+.portfolio .row2{
+	overflow: hidden;
+}
+
+.portfolio .col2{
+	width: 31%;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	overflow: hidden;
+
+}
+
+.portfolio .portfolio-box{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+
+
+.portfolio .portfolio-list{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	opacity: 0;
+	transition: .6s;
+	z-index: 9999;
+	padding: 20px;
+
+}
+
+.portfolio .portfolio-box:hover .portfolio-list{
+	opacity: 1;
+}
+.portfolio .portfolio-box:after{
+	content: '';
+	position: absolute;
+	background-color: #fff;
+	top: 38px;
+	bottom: 41px;
+	left: 45px;
+	right: 45px;
+	opacity: 0;
+	transition: .5s;
+}
+
+
+.portfolio .portfolio-box:hover.portfolio-box:after{
+	opacity: 0.8;
+	transform: scale(1.3);
+
+}
+
+
+.portfolio .Portfolio-img{
+	
+}
+
+.portfolio .Portfolio-img img{
+	width: 100%;
+}
+
+
+.portfolio .portfolio-list h2{
+	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 21px;
+	transform: translateY(-15px);
+	transition: 0.4s
+}
+
+
+
+.portfolio .portfolio-list i {
+	font-size: 22px;
+	line-height: 22px;
+	border: 1px solid #fff;
+	padding: 7px 9px;
+	transform: translateY(15px);
+	transition: 0.4s;
+	background-color: #fff;
+	border-radius: 25%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+}
+
+
+.portfolio-box:hover h2, .portfolio-box:hover i {
+	transform: translateY(0px);
+}
+
+/*##################################################
+
+		=== PORTFOLIO END ===
+
+##################################################*/
+
+
+/*##################################################
+
+			=== BLOG START ===
+
+##################################################*/
+
+	/*js*/
+	
+.owl-nav {
+	display: none;
+}
+
+	/*js end*/
+
+.our-blog{
+	background-color: #F2F2F2;
+	padding-bottom: 100px;
+
+}
+
+.our-blog .row1{
+	overflow: hidden;
+}
+
+.our-blog .col1{
+
+}
+
+.our-blog .blog-img{
+ 	overflow: hidden;
+}
+
+.our-blog .our-blog1{
+	background-color: #FFF;
+    padding-bottom: 5px;
+    margin: 20px 0px;
+}
+
+ 
+.our-blog .blog-img img{
+  width: 100%;
+  border-radius: 1%;
+  transition: .5s;
+  
+}
+
+.our-blog .blog-img img:hover{
+	transform: scale(1.3);
+}
+.our-blog .blog-info h2{
+	font-size: 20px;
+	line-height: 24px;
+	padding: 20px 5px;
+}
+
+.our-blog .blog-info p{
+	font-size: 16px;
+	line-height: 26px;
+	color: #484848;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.our-blog .all-data{
+	padding: 15px 5px;
+}
+
+
+.our-blog .all-data a{
+	padding-bottom: 5px;
+	font-size: 13px;
+	text-decoration: none;
+	color: #222;
+	border-bottom: 1px solid #888;
+	
+}
+
+.our-blog .all-data p{
+	float: right;
+	font-size: 13px;
+	line-height: 21px;
+	color: #748182;
+}
+
+.our-blog .about-box {
+	padding-top: 40px;
+	text-align: center;
+
+}
+
+.our-blog .about-box a{
+	border: 1px solid #000;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 28px;
+	font-size: 14px;
+	color: #ffffff;
+	background-color: #000000;
+	transition: .5s;
+
+}
+
+.our-blog .about-box a:hover{
+	background-color: transparent;
+	color: #000;
+	
+}
+
+/*.owl-theme .owl-dots .owl-dot span {
+	width: 30px;
+}*/
+
+
+/*##################################################
+
+			=== BLOG END ===
+
+##################################################*/
+
+/*#######################################
+
+	=== INFO START ===
+
+#######################################*/
+
+.info1{
+	background-image: url();
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ 	position: relative;
+ 	padding-top: 100px;
+ 	padding-bottom: 100px;
+  	overflow: hidden;
+}
+
+.info1:before{
+ 	content: "";
+ 	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	background-color: rgba(0, 0, 0, 0.65);
+ }
+
+.info1 .row{
+	overflow: hidden;
+}
+
+.info1 .col{
+	width: 80%;
+	margin: auto;
+}
+
+.info1 .all-info{
+	text-align: center;
+}
+
+.info1 .img{}
+
+.info1 .img img {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	position: relative;
+	margin: auto;
+}
+.info1 .text-info {}
+
+
+.info1 .text-info h2{
+	font-size: 24px;
+	line-height: 29px;
+	color: #fff;
+	position: relative;
+	padding: 10px 0px;
+}
+
+.info1 .text-info h6{
+	font-size: 14px;
+	line-height: 23px;
+	color: #fff;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.info1 .text-info p{
+	font-size: 16px;
+	line-height: 26px;
+	color: #fff;
+	position: relative;
+	font-family: Raleway-Regular;
+
+}
+
+
+			/*JS ADD*/
+
+.info1 .owl-theme .owl-dots .owl-dot span {
+	width: 18px;
+}
+
+/*#######################################
+
+	=== INFO END ===
+
+#######################################*/
+
+/*########################################
+
+		=== CONTACT START ===
+
+#########################################*/
+.contact{
+	padding-bottom: 80px;
+}
+.contact .col2{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+.contact .all-conta{
+	
+	
+}
+
+.contact .contact-info{}
+
+.contact .contact-info h2{
+	font-size: 25px;
+	line-height: 30px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	padding-left: 15px;
+}
+
+.contact .reg-area{
+	width: 94%;
+	overflow: hidden;
+}
+
+.contact .reg-area input{
+	border: none;
+	width: 100%;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 13px 2px;
+  margin-bottom: 0px;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.contact .reg-area textarea{
+	border: none;
+	 width: 100%;
+  font-size: 13px;
+  line-height: 66px;
+  padding: 0px 3px;
+  margin-bottom: 25px;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.contact .reg-area input:nth-child(1){
+	width: 49%;
+	float: left;
+}
+
+.contact .reg-area input:nth-child(2){
+	width: 49%;
+	float: right;
+}
+
+.contact .reg-area textarea:nth-child(4){
+	height: 150px;
+}
+
+.contact .reg-area .button{
+	border: 1px solid #000;
+	text-align: center;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 21px;
+	color: #ffffff;
+	position: relative;
+	background-color: #000000;
+	transition: .5s;
+	width: 160px;
+	
+}
+
+.contact .reg-area .button:hover{ 
+	background-color: transparent;
+	color: #000;
+}
+
+
+
+
+/*########################################
+
+		=== CONTACT END===
+
+#########################################*/
+
+/*##########################################
+
+         === FOOTER START ===
+
+##########################################*/
+.footer{
+	padding: 70px 0px;
+	color: #fff;
+	background-color: #222;
+}
+
+.footer .container{}
+
+.footer .row{
+	overflow: hidden;
+}
+
+.footer .col{
+	width: 25%;
+	margin: auto;
+	float: left;
+
+}
+
+.footer .contact-info{
+	border-bottom: 1px solid #333;
+	
+}
+
+.footer .contact-info h5{
+	font-size: 16px;
+	line-height: 19px;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+.footer .contact-info p{
+	font-size: 14px;
+	line-height: 23px;
+	padding-bottom: 30px;
+	text-align: center;
+	color: #fff;
+}
+
+.footer .row1{
+	overflow: hidden;
+}
+
+.footer .coll{}
+
+.footer .fo-text{}
+
+.footer .fo-text hr{}
+
+.footer .fo-text p{
+	font-size: 14px;
+	line-height: 23px;
+	color: #aaaaaa;
+	padding-top: 50px;
+	text-align: center;
+}
+
+
+
+
+
+/*##########################################
+
+         === FOOTER END ===
+
+##########################################*/
